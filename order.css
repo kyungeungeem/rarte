@@ -1,0 +1,710 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+ul, ol
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+img
+{
+    vertical-align: middle;
+}
+body
+{
+    font-family: 'GmarketSansMedium';
+    font-size: 25px;   
+    line-height: 35px;
+    background-color: #C3B6A6;
+    color: #fff;
+    min-width: 1500px;
+}
+#header_inner
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#logo
+{
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#top
+{
+    float: right;
+}
+#top li
+{
+    float: left;
+    padding-left: 24px;
+    padding-top: 89px;
+}
+#gnb
+{
+    clear: both;
+    padding-top: 52px;
+    height: 47px;
+}
+#gnb li
+{
+    float: left;
+    width: 25%;
+    letter-spacing: 2px;
+}
+#gnb li a 
+{
+    padding-bottom: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#gnb li a:hover
+{
+    border-bottom: 2px solid #fff;
+    transition: all;
+}
+#order
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+#order p
+{
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-family: 'GmarketSansMedium';
+    padding-top: 100px;
+    padding-bottom: 80px;
+    margin-top: 15px;
+    background-image: url(images/ssmall_ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#info
+{
+    width: 1320px;
+    margin: 0 auto;
+}
+#delivery
+{
+    background-image: url(images/info2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1320px;
+    height: 369px;
+    margin: 0 auto;
+    text-align: center;
+}
+#delivery .fast
+{
+    padding-top: 40px;
+}
+.info1
+{
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.info3
+{
+    padding: 120px 0;
+}
+#place
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(images/l1.png), url(images/l2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 200px 500px, 1000px 500px;
+    animation:star 0.7s linear infinite;
+}
+#place .list
+{
+    padding-bottom: 80px;
+}
+#place p
+{
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansMedium';
+    padding-bottom: 80px;
+}
+#place .p
+{
+    font-size: 33px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansMedium';
+    padding: 60px 0;
+}
+#move
+{
+  width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+#move .car
+{
+ transition: all 0.5s;
+ animation:car 3s linear infinite;
+}
+.order
+{
+  padding-top: 10px;
+}
+#outline
+{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+#form
+{
+    background-image: url(images/order_form.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1390px;
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+#outline img
+{
+    position: absolute;
+    top: -85px;
+    left: 1150px;
+    z-index: 5;
+}
+.car 
+{
+    padding-top: 40px;
+}
+.box
+{
+    border-bottom: 2px solid #f0ede4;
+    width: 900px;
+    margin: 0 auto;
+}
+.p
+{
+    margin-top: 40px;
+}
+.search5
+{   border:1.5px solid #f0ede4;
+    outline-style:none;
+    background:#9e8e7c;
+    padding:5px;
+    color: #f0ede4;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansLight';
+    width: 400px;
+    vertical-align: middle;
+}
+.search5::placeholder
+{
+    color: #f0ede4;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansLight';
+}
+.button2
+{   padding:5px;
+    border:none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: #9e8e7c;
+    background:#f0ede4;
+    cursor:pointer;
+    outline-style:none;
+    font-size: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.button2:hover
+{
+    background:#eee;
+}
+.contacts
+{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #9e8e7c;
+    padding-top: 175px;
+    padding-left: 7px;
+    border-bottom: 2px solid #a59583;
+    width: 500px;
+    padding-bottom: 25px;
+    margin-left: 50px;
+}
+.sa
+{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #9e8e7c;
+    padding-top: 37px;
+    padding-left: 7px;
+    border-bottom: 2px solid #a59583;
+    width: 500px;
+    padding-bottom: 25px;
+    margin-left: 50px;
+}
+.details
+{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #9e8e7c;
+    padding-top: 35px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+.search1 {
+    border: none;
+    border-bottom: 1.5px solid #aa9c8b;
+    /*원래 인풋 태그에 보더가 들어가 있어서, 원래 스타일을 border:none으로 없앤 다음, 원하는 스타일로 만들어 주었다.*/
+    outline-style: none;
+    /*인풋부분을 클릭했을때 나오는 검정 선을 없앰.*/
+    font-size: 20px;
+    /*안에 써지는 글자 크기를 설정*/
+    padding: 5px;
+    /*글씨가 쓰여지는 부분과, 보더 사이의 거리를 만들어줌. 백그라운드가 들어간 경우에는, 백그라운드의 영역이 커진다.*/
+    width: 208px;
+    font-family: 'GmarketSansLight';
+    letter-spacing: 2px;
+    background-color: #f0ece2;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    color: #9e8e7c;
+  }
+
+  .search1::placeholder {
+    color: #9e8e7c;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansLight';
+  }
+  .search4 {
+    border: none;
+    border-bottom: 1.5px solid #aa9c8b;
+    /*원래 인풋 태그에 보더가 들어가 있어서, 원래 스타일을 border:none으로 없앤 다음, 원하는 스타일로 만들어 주었다.*/
+    outline-style: none;
+    /*인풋부분을 클릭했을때 나오는 검정 선을 없앰.*/
+    font-size: 20px;
+    /*안에 써지는 글자 크기를 설정*/
+    padding: 5px;
+    /*글씨가 쓰여지는 부분과, 보더 사이의 거리를 만들어줌. 백그라운드가 들어간 경우에는, 백그라운드의 영역이 커진다.*/
+    width: 208px;
+    font-family: 'GmarketSansLight';
+    letter-spacing: 2px;
+    background-color: #f0ece2;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    color: #9e8e7c;
+    padding-top: 30px;
+  }
+
+  .search4::placeholder {
+    color: #9e8e7c;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansLight';
+  }
+  .search2 {
+    border: none;
+    border-bottom: 1.5px solid #aa9c8b;
+    /*원래 인풋 태그에 보더가 들어가 있어서, 원래 스타일을 border:none으로 없앤 다음, 원하는 스타일로 만들어 주었다.*/
+    outline-style: none;
+    /*인풋부분을 클릭했을때 나오는 검정 선을 없앰.*/
+    font-size: 20px;
+    /*안에 써지는 글자 크기를 설정*/
+    padding: 5px;
+    /*글씨가 쓰여지는 부분과, 보더 사이의 거리를 만들어줌. 백그라운드가 들어간 경우에는, 백그라운드의 영역이 커진다.*/
+    width: 487px;
+    font-family: 'GmarketSansLight';
+    letter-spacing: 2px;
+    background-color: #f0ece2;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    color: #9e8e7c;
+    padding-top: 30px;
+  }
+
+  .search2::placeholder {
+    color: #9e8e7c;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansLight';
+  }
+  
+  .search3 
+  {
+    margin-left: 52px;
+    margin-top: 25px;
+    vertical-align: middle;
+  }
+  .radio {
+    border: none;
+    /*원래 인풋 태그에 보더가 들어가 있어서, 원래 스타일을 border:none으로 없앤 다음, 원하는 스타일로 만들어 주었다.*/
+    outline-style: none;
+    /*인풋부분을 클릭했을때 나오는 검정 선을 없앰.*/
+    /*안에 써지는 글자 크기를 설정*/
+    padding: 5px;
+    /*글씨가 쓰여지는 부분과, 보더 사이의 거리를 만들어줌. 백그라운드가 들어간 경우에는, 백그라운드의 영역이 커진다.*/
+    background-color: #f0ece2;
+    margin-left: 60px;
+    margin-top: 25px;
+    width: 500px;
+    position: relative;
+  }
+  .radio2 {
+    border: none;
+    /*원래 인풋 태그에 보더가 들어가 있어서, 원래 스타일을 border:none으로 없앤 다음, 원하는 스타일로 만들어 주었다.*/
+    outline-style: none;
+    /*인풋부분을 클릭했을때 나오는 검정 선을 없앰.*/
+    /*안에 써지는 글자 크기를 설정*/
+    padding: 5px;
+    /*글씨가 쓰여지는 부분과, 보더 사이의 거리를 만들어줌. 백그라운드가 들어간 경우에는, 백그라운드의 영역이 커진다.*/
+    background-color: #f0ece2;
+    margin-left: 60px;
+    width: 500px;
+    position: relative;
+  }
+  .text
+  {
+    font-size: 16px;
+    font-family: 'GmarketSansLight';
+    letter-spacing: 1px;
+    color: #9e8e7c;
+  }
+  .ttext
+  {
+    font-size: 15.5px;
+    font-family: 'GmarketSansLight';
+    letter-spacing: 1px;
+    color: #9e8e7c;
+  }
+  .radiobox {
+    font-size: 16px;
+    color: #666;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  input[type="radio"]+label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  /*라디오버튼 설정*/
+  input[type="radio"]+label:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*라디오버튼크기설정*/
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #f0ece2;
+    border: 1.5px solid #aa9c8b;
+    border-radius: 100%;
+    box-shadow: none;
+  }
+
+  /*체크 된 상태 선색상선택*/
+  input[type="radio"]:checked+label:before {
+    background: #f0ece2;
+    border-color: #aa9c8b;
+  }
+
+  /*체크 된 상태 안에 동그라미 수정하기*/
+  input[type="radio"]:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*체크됐을때 원 색상 및 크기*/
+    width: 10px;
+    height: 10px;
+    background: #9e8e7c;
+    border-radius: 100%;
+    box-shadow: none;
+  }
+
+  .text {
+    vertical-align: middle;
+  }
+
+/*체크박스 스타일 시작*/
+
+.checkbox2+label {
+    position: relative;
+    /*체크박스 크기*/
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  input[type="checkbox"].checkbox2 {
+    display: none;
+  }
+
+  input[type="checkbox"].checkbox2+label:before {
+    /* 체크박스 체크 전 모습 */
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid #aa9c8b;
+    box-sizing: border-box;
+  }
+
+  input[type="checkbox"].checkbox2+label:after {
+    /* 체크 마크 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: '✔';
+    /* 체크 마크 ASCii 문자 */
+    /*font-size=체크버튼크기*/
+    font-size: 28px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    /*체크마크 색상*/
+    color: #9e8e7c;
+    transition: all .3s;
+  }
+
+  [type="checkbox"].checkbox2+label:after {
+    /* 기본 상태 - 투명에 크기 0 */
+    opacity: 0;
+  }
+
+  [type="checkbox"]:checked.checkbox2+label:after {
+    /* 체크 상태 - 불투명에 크기 1 */
+    opacity: 1;
+  }
+
+  .test_check:checked {
+    background-color: #000;
+  }
+
+
+  .flex
+  {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+  .aa
+  {
+    font-size: 15px;
+    font-family: 'GmarketSansLight';
+    letter-spacing: 2px;
+    color: #f0ece2;
+    background-color: #9e8e7c;
+    padding: 2px 52px;
+    margin-left: 58px;
+    margin-top: 33px;
+    display: inline-block;
+
+  }
+  .price1
+  {
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #9e8e7c;
+    position: absolute;
+    left: 400px;
+  }
+  .price2
+  {
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #9e8e7c;
+    position: absolute;
+    left: 400px;
+  }
+  .price3
+  {
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #9e8e7c;
+    position: absolute;
+    left: 400px;
+  }
+#footer
+{
+    background-image: url(images/f_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 580px;
+    margin-top: 120px;
+}
+#footer_inner
+{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+#footer ul li
+{
+    color: #f0ede4;
+}
+#footer ul
+{
+    float: left;
+    padding-top: 80px;
+    padding-right: 70px;
+}
+#footer .capital
+{
+    padding-bottom: 60px;
+    font-family: 'GmarketSansMedium';
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+#footer ul li
+{
+    padding-bottom: 25px;
+    font-family: 'GmarketSansLight';
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#footer .flr
+{
+    float: right;
+    color: #4b4138;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding-right: 12px;
+}
+#footer .flr p
+{
+    padding-top: 77px;
+}
+.search4_1
+{   width:394.34px;
+    padding:10px;
+    outline-style:none;
+    border:none;
+    border-bottom:2px solid #4b4138;
+    background: none; 
+    color: #4b4138;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansMedium';
+}
+.search4_1::placeholder
+{
+    color: #4b4138;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansMedium';
+}
+/*top_btn*/
+.top_btn a{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #4b4138;
+    color:#fff;
+    line-height: 60px;
+    width: 60px;
+    text-align: center;
+  }
+  
+  .top_btn{
+    position: fixed;
+    right:40px;
+    bottom:40px;
+    z-index: 10;
+  }
+  @keyframes star
+  {
+    0%{background-position: 200px 500px, 1000px 500px;}
+    50%{background-position: 200px 480px, 1000px 480px;}
+    100%{background-position: 200px 500px, 1000px 500px;}
+  }
+  @keyframes car
+  {
+    from{
+      transform: translateX(1200px);
+    }
+    to{
+      transform: translateX(-400px);
+    }
+  }

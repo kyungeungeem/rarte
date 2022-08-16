@@ -1,0 +1,621 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Daniel'), url('https://fonts.cdnfonts.com/s/101/daniel.woff') format('woff');
+}
+@font-face {
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Daniel'), url('https://fonts.cdnfonts.com/s/101/danielbd.woff') format('woff');
+}
+@font-face {
+    font-family: 'Daniel Black';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Daniel Black'), url('https://fonts.cdnfonts.com/s/101/danielbk.woff') format('woff');
+}
+
+/* font-family: 'Daniel', sans-serif; */
+/* font-family: 'Daniel Black', sans-serif; */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+ul, ol
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+img
+{
+    vertical-align: middle;
+}
+body
+{
+    font-family: 'GmarketSansMedium';
+    font-size: 25px;   
+    line-height: 35px;
+    background-color: #C3B6A6;
+    color: #fff;
+    min-width: 1500px;
+}
+#header_inner
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#logo
+{
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#top
+{
+    float: right;
+}
+#top li
+{
+    float: left;
+    padding-left: 24px;
+    padding-top: 89px;
+}
+#gnb
+{
+    clear: both;
+    padding-top: 52px;
+    height: 47px;
+}
+#gnb li
+{
+    float: left;
+    width: 25%;
+    letter-spacing: 2px;
+}
+#gnb li a 
+{
+    padding-bottom: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#gnb li a:hover
+{
+    border-bottom: 2px solid #fff;
+    transition: all;
+}
+#intro
+{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 70px 0;
+    text-align: center;
+    background-image: url(images/about.png), url(images/about_back.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, 415px 70px;
+    height: 642px;
+}
+#intro ul
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+#home_cafe
+{
+    width: 1320px;
+    height: 580px;
+    margin: 0 auto;
+    text-align: center;
+}
+#home_cafe .pp
+{
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding: 100px 0;
+}
+#moodboard
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center 225px;
+    height: 2000px;
+    position: relative;
+}
+.t1
+{
+    position: absolute;
+    top: 1310px;
+    left: 120px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 700;
+}
+.t2
+{
+    position: absolute;
+    top: 1210px;
+    left: 730px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 700;
+}
+.t3
+{
+    position: absolute;
+    top: 1290px;
+    left: 950px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 700;
+}
+.t4
+{
+    position: absolute;
+    top: 1770px;
+    left: 670px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 700;
+}
+.t5
+{
+    position: absolute;
+    top: 1900px;
+    left: 160px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 700;
+}
+.t6
+{
+    position: absolute;
+    top: 1910px;
+    left: 900px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: 'Daniel';
+    font-style: normal;
+    font-weight: 700;
+}
+.a1
+{
+    position: absolute;
+    top: 780px;
+    left: 100px;
+}
+.a2
+{
+    position: absolute;
+    top: 1130px;
+    left: 300px;
+}
+.a3
+{
+    position: absolute;
+    top: 1580px;
+    left: 70px;
+}
+.a4
+{
+    position: absolute;
+    top: 780px;
+    left: 670px;
+}
+.a5
+{
+    position: absolute;
+    top: 780px;
+    left: 915px;
+}
+.a6
+{
+    position: absolute;
+    top: 1340px;
+    left: 850px;
+}
+.leaf0
+{
+    position: absolute;
+    top: 650px;
+    left: 930px;
+}
+.leaf1
+{
+    position: absolute;
+    top: 950px;
+    left: 510px;
+    z-index: 10;
+}
+.leaf2
+{
+    position: absolute;
+    top: 1230px;
+    left: 1120px;
+    z-index: 10;
+}
+.leaf3
+{
+    position: absolute;
+    top: 1380px;
+    left: 170px;
+    z-index: 10;
+}
+.leaf4
+{
+    position: absolute;
+    top: 1480px;
+    left: 660px;
+    z-index: 10;
+}
+.leaf5
+{
+    position: absolute;
+    top: 1870px;
+    left: 800px;
+    z-index: 10;
+}
+.ig
+{
+    padding-top: 70px;
+}
+#moodboard .rarte
+{
+    font-size: 45px;
+    letter-spacing: 2px;
+    padding: 70px 0;
+}
+#offline
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(images/about_ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center 263px;
+    position: relative;
+}
+#offline .position
+{
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.offline
+{
+    padding-top: 200px;
+}
+.homehome
+{
+    position: absolute;
+    top: 1170px;
+    left: 150px;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg)
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+#offline .adress
+{
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding-top: 38px;
+}
+.light
+{
+    font-family: 'GmarketSansLight';
+    font-size: 33px;
+    letter-spacing: 2px;
+    line-height: 49px;
+    padding-top: 7px;
+}
+#gift
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+#gift p
+{
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding: 100px 0;
+}
+#gift .tape
+{
+    position: absolute;
+    top: 670px;
+    left: 820px;
+    animation:tape 0.8s linear infinite alternate-reverse;
+}
+@keyframes tape
+{
+  from{transform: translateY(15px);}
+  to{transform: translateY(0px);}
+}
+#p1 p
+{
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 43px;
+    text-align: left;
+    position: absolute;
+    top: 500px;
+    left: 75px;
+}
+#p1 .span
+{
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansLight';
+}
+#p2 p
+{
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 43px;
+    text-align: left;
+    position: absolute;
+    top: 290px;
+    left: 910px;
+}
+#p2 .span
+{
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansLight';
+}
+#border
+{
+    border-bottom: 2px solid #fff;
+}
+#insta
+{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.instagram
+{
+    padding-top: 70px;
+}
+#insta .follow
+{
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.ia
+{
+    font-family: 'GmarketSansLight';
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+#post
+{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+#post ul li
+{
+    float: left;  
+    position: relative;
+}
+#post .l1
+{
+    position: absolute;
+    top: 290px;
+    left: 110px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+#post .l1_1
+{
+    position: absolute;
+    top: 450px;
+    left: 260px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+#post .l2
+{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+#post .l2_1
+{
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+#post .l3
+{
+    position: absolute;
+    top: 65px;
+    left: 110px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+#post .l3_1
+{
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+#post .l4
+{
+    position: absolute;
+    top: 65px;
+    left: 190px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+#post .l4_1
+{
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+#footer
+{
+    background-image: url(images/f_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 580px;
+}
+#footer_inner
+{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+#footer ul li
+{
+    color: #f0ede4;
+}
+#footer ul
+{
+    float: left;
+    padding-top: 80px;
+    padding-right: 70px;
+}
+#footer .capital
+{
+    padding-bottom: 60px;
+    font-family: 'GmarketSansMedium';
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+#footer ul li
+{
+    padding-bottom: 25px;
+    font-family: 'GmarketSansLight';
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#footer .flr
+{
+    float: right;
+    color: #4b4138;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding-right: 12px;
+}
+#footer .flr p
+{
+    padding-top: 77px;
+}
+.search4_1
+{   width:394.34px;
+    padding:10px;
+    outline-style:none;
+    border:none;
+    border-bottom:2px solid #4b4138;
+    background: none; 
+    color: #4b4138;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansMedium';
+}
+.search4_1::placeholder
+{
+    color: #4b4138;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: 'GmarketSansMedium';
+}
+/*top_btn*/
+.top_btn a{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #4b4138;
+    color:#fff;
+    line-height: 60px;
+    width: 60px;
+    text-align: center;
+  }
+  
+  .top_btn{
+    position: fixed;
+    right:40px;
+    bottom:40px;
+    z-index: 10;
+  }
