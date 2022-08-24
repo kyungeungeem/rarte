@@ -250,6 +250,7 @@ body
     top: -78px;
     left: 818px;
     animation:pose 6s linear infinite 2.5s;
+    z-index: 5;
 }
 .book
 {
@@ -258,6 +259,7 @@ body
     top: 70px;
     left: 860px;
     animation:pose 6s linear infinite 2s;
+    z-index: 6;
 }
 .jug
 {
@@ -266,6 +268,7 @@ body
     top: 315px;
     left: 830px;
     animation:pose 6s linear infinite 1.5s;
+    z-index: 7;
 }
 .kettle
 {
@@ -274,6 +277,7 @@ body
     top: 455px;
     left: 800px;
     animation:pose 6s linear infinite 1s;
+    z-index: 8;
 }
 .s_box
 {   opacity: 0;
@@ -281,6 +285,7 @@ body
     top: 700px;
     left: 770px;
     animation:pose 6s linear infinite 0.5s;
+    z-index: 9;
 }
 @keyframes pose
 {
@@ -305,6 +310,7 @@ body
     top: 560px;
     left: 700px;
     animation:posi 6s linear infinite 0s;
+    z-index: 10;
 }
 @keyframes posi
 {
